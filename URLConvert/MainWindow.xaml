@@ -1,0 +1,23 @@
+﻿<Window x:Class="URLConvert.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:URLConvert"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Title="URL替换" Height="520" Width="820">
+    <Grid>
+        <StackPanel TextBlock.FontSize="20" Margin="10">
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="输入腾讯看点视频地址："/>
+                <TextBox TextWrapping="Wrap" Height="200" Text="http://post.mp.qq.com/kan/video/2505985669-2685dce876f711aw-e30212zjpsb.html?_wv=2281701505&amp;sig=aeb8195ea5c58016ac7f78be76c183ab&amp;time=1573964020" Width="480" x:Name="txtUrl"/>
+                <Button VerticalAlignment="Top" Content="转换" Margin="10,0,0,0" x:Name="btnConvert" Click="BtnConvert_Click" Width="70"/>
+            </StackPanel>
+            <TextBlock Text="看点视频地址："/>
+            <TextBox IsReadOnly="True" Height="200" TextWrapping="Wrap" x:Name="txtKDUrl"/>
+            <Button Content="打开看点视频" HorizontalAlignment="Left" Click="BtnOpen_Click" x:Name="btnOpen"/>
+        </StackPanel>
+    </Grid>
+</Window>
